@@ -20,4 +20,8 @@ def helper(steps, m, array):
 	for i in range(1, m + 1):
 		# Make sure steps >= 0.
 		if (steps - i >= 0): result += helper(steps - i, m, array)
-		 
+
+	# Dynamic Programming: Cache result befor returning result to prevent redundant computation.
+	array[steps] = result
+
+	return result	
