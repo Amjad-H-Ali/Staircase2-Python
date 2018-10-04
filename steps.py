@@ -9,3 +9,6 @@ def staircase_2(steps, max, array):
 
 	# When steps equals 0-1, only one way to reach top.
 	if (steps <= 1): return 1
+
+	# If we already found answer before.
+	if (array[steps]): return array[steps]
