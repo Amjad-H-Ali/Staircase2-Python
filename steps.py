@@ -28,18 +28,21 @@ def helper(steps, m, array):
 
 # Wrapper function that calls helper function to initialize params.
 def staircase_2 (steps, m):
-	helper(steps, m, [None] * m)
+
+	array = [None] * (steps + 1)
+
+	return helper(steps, m, array)
 
 
 
-print(staircase_2(3, 3)); # 4
+print(staircase_2(3, 3)) # 4
 
-print(staircase_2(4, 2)); # 5
+print(staircase_2(4, 2)) # 5
 
-print(staircase_2(3, 2)); # 3
+print(staircase_2(3, 2)) # 3
 
-print(staircase_2(0, 3)); # 1
+print(staircase_2(0, 3)) # 1
 
-print(staircase_2(1, 2)); # 1
+print(staircase_2(1, 2)) # 1
 
-print(staircase_2(3, 5)); # 4
+print(staircase_2(3, 5)) # 4
